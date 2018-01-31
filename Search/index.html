@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/css/weui.css" />
+		<link rel="stylesheet" type="text/css" href="lib/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script type="text/javascript" src="lib/js/jquery-2.1.4.js"></script>
+		<script src="lib/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/jquery_weui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/jquery.cookie1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body ontouchstart="" class="weui-pull-to-refresh touching pull-down">
+		<div class="weui-pull-to-refresh__layer">
+			<div id="weurefresh" class='weui-pull-to-refresh__arrow'></div>
+			<div class="weui-pull-to-refresh__preloader"></div>
+			<div class="down">下拉刷新</div>
+			<div class="up">释放刷新</div>
+			<div class="refresh">正在刷新</div>
+		</div>
+
+		<!--输入框-->
+		<div style="padding:9px; background: #efeff4;">
+
+			<div class="search_bar">
+				<div class="div_case_type">
+					<span id="span_case_type" class="cs_span_case_type">
+		    		案件类型
+		    	</span>
+					<img src="img/downicon.png" class="cs_img_icon_with" />
+				</div>
+				<div class="div_input_search">
+
+					<input id="input_search_box" type="search" onfocus="inputfocus()" onkeydown="keyEvenType(event)" class="cs_input_search_box">
+
+				</div>
+				<div class="div_img_cancel">
+					<img onclick="cleartext()" id="textclear" src="img/Ic_clear.png" class="cs_img_clear" />
+					<img id="js_img_search" src="img/ic_search.png" class="cs_img_search" />
+				</div>
+				<div class="div_cancel_btn">
+					<span style="display: none;" id="cancelBox" class="cs_span_cancel" onclick="cancel()">
+             		         取消
+                 	</span>
+					<span style="display: block;" id="showCase" class="cs_span_cancel" onclick="showHistory()">
+                 		展开
+                 	</span>
+
+				</div>
+
+			</div>
+		</div>
+		<!--类型选择布局-->
+
+		<div class="showCase" style="display: none;" id="folatCase">
+			<ul id="ui_case_type">
+			</ul>
+		</div>
+
+		<!--最近搜索-->
+
+		<div id="nowlyView" style="display: none; " class="weui-msg__text-area">
+			<div class="text_color_gray weui-msg__desc">
+				<div id="newbody" style="float: left;width: 100%;height: auto;">
+					<p class="historyTitle">历史记录<span id="clearnewly" class="clearsearch">
+				清除所有	
+				</span></p>
+					<ul id="historyView">
+					</ul>
+				</div>
+				<div style="float: left;width: 100%;">
+					<p class="historyTitle">来源等级</p>
+					<ul id="ui_type_parent">
+
+					</ul>
+
+				</div>
+				<div style="float: left;width: 100%;">
+					<p class="historyTitle">文书类型</p>
+					<ul id="ui_Document_parent">
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<!--下拉刷新布局-->
+		<div id="weui-cellshear" style="display: block;" class="weui-cells">
+		</div>
+	    <div id="weui-cellshear_law" style="display: none;" class="weui-cells">
+	    	<div class="weui-cell">
+	    		<div class="weui-cell__bd">
+	    		<p>	<span class="case_title">测试标题</span><span class="cs_law_span_title">【<span>有效</span>】</span></p>
+	    		 <p>
+	    		 	<p class="cs_law_p_pubdata"><span id="here">发布地址</span>
+	    		 		<span id="">案号</span>
+	    		 		<span id="pubDate">发布时间</span>
+	    		 		<span id="staDate">生效时间</span>
+
+	    		 	</p>
+	    		 </p>   
+	    		   
+	    		</div>
+	    	</div>
+		</div>
+		<!--加载更多布局-->
+		<div id="loadboy" style="display: block;">
+
+			<div id="showloading" class="weui-loadmore">
+				<i class="weui-loading"></i>
+				<span class="weui-loadmore__tips">正在加载</span>
+			</div>
+			<div id="showloadOver" class="weui-loadmore">
+				<i class="weui-icon-success"></i>
+				<span class="weui-loadmore__tips">加载完成</span>
+			</div>
+
+		</div>
+
+		<div id="showEmpty" style="display: none;" class="empty_ishow">
+                               无符合条件的数据
+</div>
+
+		<script src="js/deletercookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/website.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

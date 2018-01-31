@@ -1,0 +1,303 @@
+#searchInput {
+	padding-left: 20px;
+	outline-color: #10AEFF;
+}
+
+/*整个输入框*/
+
+.search_bar {
+	/*width: 100%;*/
+	height: 34px;
+	display: flex;
+
+}
+/*无符合条件的数据*/
+.empty_ishow{
+	text-align: center;
+position: absolute;
+ left: 50%;
+ top: 50%;
+width:200px;
+height:100px;
+margin-left:-100px;
+margin-top:-50px;
+}
+/*案件类型*/
+
+.div_case_type {
+	/*width: 31%;*/
+	width: 90px;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+	align-items: center;
+	height: 34px;
+	background: #FFFFFF;
+}
+
+
+/*输入框*/
+
+.div_input_search {
+	/*width: 37%;*/
+	display: flex;
+	flex: 1;
+	float: left;
+	height: 34px;
+	background: #FFFFFF;
+}
+
+.weui-pull-to-refresh__layer{
+	 height: 50px;
+}
+/*搜索图标*/
+
+.div_img_cancel {
+	/*width: 14%;*/
+	/*width: 37px;*/
+		width: 44px;
+    float: left;
+    
+	height: 34px;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+	text-align: right|center;
+	background: #FFFFFF;
+}
+
+
+/*取消按钮*/
+
+.div_cancel_btn {
+	/*width: 18%;*/
+	width: 40px;
+	
+	float: left;
+	text-align: center;
+	background: #efeff4;
+}
+
+
+/*输入框*/
+
+.cs_input_search_box {
+	outline: none;
+	width: 100%;
+	border: 0px;
+	position: relative;
+
+}
+
+
+/*类型下标*/
+
+.cs_img_icon_with {
+	width: 8px;
+	height: 8px;
+	position: relative;
+	top: 4px;
+}
+
+
+/*类型*/
+
+.cs_span_case_type {
+	margin: 4px;
+	padding: 2px;
+	font-size: 15px;
+	position: relative;
+	top: 6px;
+}
+
+
+/*取消*/
+
+.cs_span_cancel {
+	font-size: 14px;
+	padding: 4px;
+}
+
+
+/*字体颜色*/
+
+.cs_text_color_gray {
+	margin: 8px;
+	color: #9B9B9B;
+}
+
+.cs_img_clear {
+	width: 14px;
+	position: relative;
+	top: 9px;
+	display: none;
+	padding: 2px;
+	vertical-align: text-bottom;
+}
+
+.cs_img_search {
+	width: 20px;
+	position: relative;
+	top: 8px;
+	float: right;
+	margin-right: 6px;
+	padding: 2px;
+	padding-left: 4px;
+	vertical-align: text-bottom;
+}
+
+.cs_img_clear:hover {
+	background: #EFEFF8;
+}
+
+.cs_img_clear:active {
+	background: #EFEFF8;
+}
+
+.cs_img_search:hover {
+	background: #EFEFF8;
+}
+
+.cs_img_search:active {
+	background: #EFEFF8;
+}
+
+.cs_span_case_type:hover {
+	background: #EFEFF8;
+}
+
+.cs_span_case_type:active {
+	background: #EFEFF8;
+}
+
+.cs_span_cancel:hover {
+	background: #C7C7C7;
+}
+
+.cs_span_cancel:active {
+	background: #C7C7C7;
+}
+.cs_law_p_pubdata{
+	color: #9B9B9B;
+    font-size: 12px;
+ }
+ .cs_law_span_title{
+ 	color: #9B9B9B;
+ }
+.Hot_search {
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+	font-size: 14px;
+	border-radius: 5px;
+	list-style: none;
+	text-align: center;
+	margin-right: 8px;
+	margin-top: 5px;
+	list-style-type: none;
+	background: #C7C7C7;
+	color: white;
+	border-color: #000000;
+}
+
+
+
+.showCase {
+	color: white;
+	background: #3D4145;
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: 48px;
+	z-index: 101;
+	border-radius: 5px;
+	padding: 7px;
+}
+.showCase:after{
+	content: " ";
+    position: absolute;
+    bottom: 100%; /* 提示工具底部 */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #3D4145 transparent;
+}
+
+.li_icon {
+	display: list-item;
+	margin: auto, 8px, 8px, 8px;
+	top: 1px;
+	
+}
+
+
+.weui-cell__hd {
+	width: 20%;
+}
+
+.weui-cell__bd {
+	top: 0px;
+	margin-left: 10px;
+}
+
+.case_title {
+	font-size: 18px;
+	color: #0000CC;
+}
+
+.weui-cell {
+	margin-left: 8px;
+}
+
+.img_show_with {
+	width: 100%;
+}
+
+.text_color_blue {
+	color: #66CCFF;
+}
+
+
+/*类型按钮点击效果*/
+
+.weui-btn_plain-primary_case {
+	color: #9B9B9B;
+}
+
+.weui-btn_plain-primary_case:not(.weui-btn_plain-disabled):active {
+	color: rgba(0, 0, 0, 0.6);
+	border-color: rgba(26, 173, 25, 0.6);
+}
+
+.weui-btn_plain-primary_case:after {
+	border-width: 0;
+}
+.historyTitle{
+   background: #C4C4C4;
+   color: #000000; 
+   font-weight: 700;
+   font-size: 17px;
+   width: auto;
+   height: 32px;
+   padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.clearsearch {
+	background: #E3E3E3;
+	float: right;
+	color: #007AFF;
+     font-weight: normal;
+     padding-right: 4px;
+     padding-left: 4px;
+     text-align: right;
+     margin-right: 4px;
+    border-radius: 4px;
+}
+.clearsearch:hover{
+	background: #EFEFF4;
+}
+.clearsearch:active{
+	background: #EFEFF4;
+}

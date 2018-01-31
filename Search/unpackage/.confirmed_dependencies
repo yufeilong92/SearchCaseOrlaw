@@ -1,0 +1,15 @@
+{
+	"index.html": {
+		"resources": [
+			"img/下滑标实心.png",
+			"js/jquery-2.1.4.js",
+			"js/swiper.min.js",
+			"css/weui.min.css",
+			"js/jquery_weui.js",
+			"css/weui.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}
